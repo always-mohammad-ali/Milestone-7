@@ -11,6 +11,12 @@ function App() {
       
       <h1>Vite + React</h1>
       <Person></Person>
+      <Dev></Dev>
+
+      <Device name="laptop" price='17k'></Device>
+      <Device name="mobile" price='176k'></Device>
+      <Device name="watch" price='7k'></Device>
+      <Device name="comp" price='1457k'></Device>
       
     </>
   )
@@ -19,11 +25,29 @@ function App() {
 function Person(){
   const name = 'ali'
   return(
-    <>
+    <div className='student'>
        <h2>Hey, Man What is up!</h2>
        <h1>I am {name}</h1>
-   </>
+   </div>
   )
+}
+
+function Dev(){
+  const cssHere = {
+    color : "blue",
+    backgroundColor : "gray"
+  }
+
+  return(
+    <div style={cssHere}>
+      <h2>hey dev</h2>
+      <p>You are fcking awesome</p>
+    </div>
+  )
+}
+
+function Device(props){
+  return <h2>This is {props.name}. Its price is {props.price}</h2>
 }
 
 export default App
