@@ -3,9 +3,12 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import TODO from './TODO'
+import Actor from './Actor'
+
 
 function App() {
  
+  const actors = ['sakib', 'manna', 'salman', 'riaz']
 
   return (
     <>
@@ -13,9 +16,18 @@ function App() {
       
       
       <h1>Vite + React</h1>
-      <TODO task="ECO101" isDone={true}></TODO>
+
+      {
+        actors.map(actorName => <Actor name={actorName}>
+
+        </Actor>)
+      }
+      
+      
+
+      {/* <TODO task="ECO101" isDone={true}></TODO>
       <TODO task="MAT120" isDone={false}></TODO>
-      <TODO task="MAT125" isDone={true}></TODO>
+      <TODO task="MAT125" isDone={true}></TODO> */}
 
       {/* <Person></Person>
       <Dev></Dev>
