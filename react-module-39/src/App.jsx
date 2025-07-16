@@ -1,5 +1,6 @@
 
 import './App.css'
+import Counter from './counter';
 
 function App() {
   
@@ -15,6 +16,8 @@ function App() {
     <>
       
       <h1>React</h1>
+
+      <Counter></Counter>
 
       <button onClick={handleClick}>Click1</button>
 
