@@ -11,10 +11,7 @@ function App() {
   const actors = ['sakib', 'manna', 'salman', 'riaz']
 
   return (
-    <>
-
-      
-      
+    <>   
       <h1>Vite + React</h1>
 
       {
