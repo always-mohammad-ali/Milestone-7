@@ -1,5 +1,7 @@
 
 import './App.css'
+
+import Users from './Users';
 import Counter from './counter';
 
 import Team from './Team';
@@ -18,6 +20,8 @@ function App() {
     <>
       
       <h1>React</h1>
+
+      <Users></Users>
 
       <Team></Team>
 
