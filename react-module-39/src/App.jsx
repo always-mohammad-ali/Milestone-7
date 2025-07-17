@@ -2,6 +2,8 @@
 import './App.css'
 import Counter from './counter';
 
+import Team from './Team';
+
 function App() {
   
   function handleClick(){
@@ -16,6 +18,8 @@ function App() {
     <>
       
       <h1>React</h1>
+
+      <Team></Team>
 
       <Counter></Counter>
 
